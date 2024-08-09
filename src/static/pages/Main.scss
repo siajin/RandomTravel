@@ -1,0 +1,49 @@
+.main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+}
+
+.bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  @keyframes bgMoveLeft {
+    0% {
+      transform: rotate(24deg) translateX(-1000px) translateY(-500px);
+    }
+    100% {
+      transform: rotate(24deg) translateX(-1650px) translateY(-500px);
+    }
+  }
+  @keyframes bgMoveRight {
+    0% {
+      transform: rotate(24deg) translateX(-1000px) translateY(-500px);
+    }
+    100% {
+      transform: rotate(24deg) translateX(-350px) translateY(-500px);
+    }
+  }
+  .line {
+    // position: absolute;
+    white-space: nowrap;
+    font-size: 100px;
+    padding: 20px 0;
+    color: #f3e9e2;
+  }
+  .left {
+    animation: bgMoveLeft 12s linear infinite;
+  }
+  .right {
+    animation: bgMoveRight 12s linear infinite;
+  }
+  .line > div {
+    display: inline-block;
+    width: 650px;
+    // min-width: 100px;
+  }
+}

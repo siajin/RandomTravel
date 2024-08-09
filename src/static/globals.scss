@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#root > div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
